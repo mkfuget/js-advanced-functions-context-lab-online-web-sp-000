@@ -42,8 +42,8 @@ function createTimeInEvent()
 {
   this.timeInEvents.push({
     type: "TimeIn",
-    hour: parseInt(this.date.substring(11,16)),
-    date: this.date.substring(0, 10)
+    hour: parseInt(this.substring(11,16)),
+    date: this.substring(0, 10)
   })
   return employeeRecord
 }
