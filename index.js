@@ -59,8 +59,8 @@ function createTimeOutEvent(date)
 
 function hoursWorkedOnDate(date)
 {
-    let timeIn = this.timeInEvents.find(x => x.date === date).hour
-    let timeOut = this.timeOutEvents.find(x => x.date === date).hour
+    let timeIn = this.cRecord.timeInEvents.find(x => x.date === date).hour
+    let timeOut = this..cRecord.timeOutEvents.find(x => x.date === date).hour
     return (timeOut - timeIn)/100
 }
 function wagesEarnedOnDate(employeeRecord, date)
