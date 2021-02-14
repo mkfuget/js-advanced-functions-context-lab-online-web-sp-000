@@ -40,6 +40,7 @@ function createEmployeeRecords(array)
 
 function createTimeInEvent()
 {
+  console.log(this)
   this.timeInEvents.push({
     type: "TimeIn",
     hour: parseInt(this.substring(11,16)),
