@@ -59,7 +59,6 @@ function createTimeOutEvent(date)
 
 function hoursWorkedOnDate(date)
 {
-  console.log(date)
     let timeIn = this.cRecord.timeInEvents.find(x => x.date === date).hour
     let timeOut = this.cRecord.timeOutEvents.find(x => x.date === date).hour
     return (timeOut - timeIn)/100
