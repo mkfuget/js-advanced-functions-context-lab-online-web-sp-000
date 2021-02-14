@@ -47,7 +47,7 @@ function createTimeInEvent(date)
   })
   return this
 }
-function createTimeOutEvent(employeeRecord, date)
+function createTimeOutEvent(date)
 {
   employeeRecord.timeOutEvents.push({
     type: "TimeOut",
