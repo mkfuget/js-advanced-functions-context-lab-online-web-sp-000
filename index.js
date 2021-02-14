@@ -64,9 +64,9 @@ function hoursWorkedOnDate(date)
     let timeOut = this.timeOutEvents.find(x => x.date === date).hour
     return (timeOut - timeIn)/100
 }
-function wagesEarnedOnDate(employeeRecord, date)
+function wagesEarnedOnDate(date)
 {
-  return hoursWorkedOnDate(employeeRecord, date)*employeeRecord.payPerHour
+  return hoursWorkedOnDate.call(this, date)*employeeRecord.this
 }
 function calculatePayroll(employeeRecords)
 {
