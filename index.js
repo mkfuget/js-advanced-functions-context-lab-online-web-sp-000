@@ -38,7 +38,7 @@ function createEmployeeRecords(array)
   return array.map(record => createEmployeeRecord(record))
 }
 
-function createTimeInEvent(employeeRecord, date)
+function createTimeInEvent()
 {
   this.employeeRecord.timeInEvents.push({
     type: "TimeIn",
