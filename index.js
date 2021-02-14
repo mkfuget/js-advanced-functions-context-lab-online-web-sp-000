@@ -68,10 +68,6 @@ function wagesEarnedOnDate(employeeRecord, date)
 {
   return hoursWorkedOnDate(employeeRecord, date)*employeeRecord.payPerHour
 }
-function allWagesFor(employeeRecord)
-{
-  return employeeRecord.timeInEvents.map(n => n.date).reduce((total, date) => wagesEarnedOnDate(employeeRecord, date) + total, 0)
-}
 function calculatePayroll(employeeRecords)
 {
   return employeeRecords.reduce((total, employee) =>allWagesFor(employee) + total, 0)
