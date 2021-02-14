@@ -45,7 +45,7 @@ function createTimeInEvent(date)
     hour: parseInt(date.substring(11,16)),
     date: date.substring(0, 10)
   })
-  return employeeRecord
+  return this
 }
 function createTimeOutEvent(employeeRecord, date)
 {
