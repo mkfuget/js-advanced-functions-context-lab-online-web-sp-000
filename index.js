@@ -49,7 +49,7 @@ function createTimeInEvent(date)
 }
 function createTimeOutEvent(date)
 {
-  employeeRecord.timeOutEvents.push({
+  this.timeOutEvents.push({
     type: "TimeOut",
     hour: parseInt(date.substring(11,16)),
     date: date.substring(0, 10)
